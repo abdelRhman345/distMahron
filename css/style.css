@@ -1,0 +1,233 @@
+body {
+  direction: rtl;
+  text-align: right;
+  background-color: #f1f1f1;
+  font-family: "Tajawal", sans-serif; }
+
+h2 {
+  color: #1a1a1a;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 30px;
+  margin: 0 auto 30px;
+  position: relative; }
+  h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    width: 50px;
+    height: 3px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    background-color: #61aa44; }
+  h2::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    width: 30px;
+    height: 3px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    background-color: #61aa44; }
+
+p {
+  font-size: 20px; }
+
+/* Header */
+header {
+  height: 300px;
+  width: 100%;
+  background-color: #1a1a1a; }
+  header .brand {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    padding: 50px 0;
+    overflow: hidden; }
+
+.container {
+  background-color: #fff;
+  margin-top: -80px;
+  margin-bottom: 100px;
+  padding: 30px 50px;
+  -webkit-box-shadow: 0 0 2px 0 rgba(26, 26, 26, 0.3);
+          box-shadow: 0 0 2px 0 rgba(26, 26, 26, 0.3); }
+
+/* About Us */
+.about-us {
+  padding: 50px 0; }
+  .about-us h3 {
+    font-size: 17px;
+    padding: 8px;
+    font-weight: 600;
+    margin: 30px 0 20px;
+    width: 200px;
+    color: #fff;
+    border-right: 4px solid #1a1a1a;
+    text-shadow: 0 0 3px rgba(26, 26, 26, 0.3);
+    background-color: #61aa44; }
+  .about-us p {
+    font-size: 18px; }
+    .about-us p span {
+      display: inline-block;
+      font-size: 16px;
+      padding: 5px;
+      width: 45%;
+      background-color: #f1f1f1;
+      margin: 5px;
+      -webkit-box-shadow: 0 0 1px 0 rgba(26, 26, 26, 0.3);
+              box-shadow: 0 0 1px 0 rgba(26, 26, 26, 0.3); }
+      .about-us p span i {
+        font-size: 14px;
+        margin: 0 5px;
+        color: #61aa44; }
+
+/* Our Services */
+.our-services {
+  padding: 50px 0; }
+  .our-services .info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .our-services .info .text {
+      height: 150px;
+      background-color: #f1f1f1;
+      -webkit-box-shadow: 0 0 2px 0 rgba(26, 26, 26, 0.3);
+              box-shadow: 0 0 2px 0 rgba(26, 26, 26, 0.3);
+      margin: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      cursor: pointer;
+      position: relative; }
+      .our-services .info .text p {
+        opacity: 0;
+        color: #333;
+        -webkit-transition: .3s;
+        transition: .3s; }
+      .our-services .info .text span {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        color: #61aa44;
+        font-size: 45px !important;
+        text-align: center;
+        width: 100%;
+        -webkit-transition: .3s;
+        transition: .3s; }
+      .our-services .info .text:hover span {
+        opacity: 0; }
+      .our-services .info .text:hover p {
+        opacity: 1; }
+
+/* Our Products */
+.our-product {
+  padding: 50px 0; }
+  .our-product .content {
+    width: 100%;
+    height: 230px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 3px 0 rgba(26, 26, 26, 0.3);
+            box-shadow: 0 0 3px 0 rgba(26, 26, 26, 0.3);
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    -webkit-transition: .2s ease;
+    transition: .2s ease; }
+    .our-product .content .img {
+      width: 95%;
+      height: 210px;
+      margin: 10px auto;
+      border-radius: 5px;
+      position: relative;
+      -webkit-transition: .3s ease;
+      transition: .3s ease;
+      position: relative; }
+      .our-product .content .img::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(26, 26, 26, 0.3); }
+      .our-product .content .img img {
+        border-radius: 5px; }
+    .our-product .content .overflow {
+      font-size: 14px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(26, 26, 26, 0.8)), to(transparent));
+      background: linear-gradient(to top, rgba(26, 26, 26, 0.8), transparent);
+      -webkit-transform: translateY(60px);
+              transform: translateY(60px);
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: .3s ease;
+      transition: .3s ease; }
+      .our-product .content .overflow p {
+        color: #fff;
+        padding: 15px;
+        font-size: 18px;
+        margin: 40% 0; }
+    .our-product .content:hover .overflow {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1; }
+
+/* Footer */
+footer {
+  padding: 50px 0;
+  background-color: #1a1a1a; }
+  footer .container {
+    margin: 0 auto;
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 100% !important;
+    background-color: transparent; }
+  footer .scoail {
+    text-align: center; }
+    footer .scoail .btn:focus {
+      outline: 0;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    footer .scoail .btn i {
+      font-size: 20px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      color: #fff;
+      background-color: #0e1016;
+      -webkit-box-shadow: 0 0 3px 0 #1a1a1a;
+              box-shadow: 0 0 3px 0 #1a1a1a;
+      -webkit-transition: .3s ease;
+      transition: .3s ease; }
+    footer .scoail .btn:nth-child(1):hover i {
+      background-color: #3b5999; }
+    footer .scoail .btn:nth-child(2):hover i {
+      background-color: #55acee; }
+    footer .scoail .btn:nth-child(3):hover i {
+      background-color: #e4405f; }
+    footer .scoail .btn:nth-child(4):hover i {
+      background-color: #0077B5; }
+    footer .scoail .btn:nth-child(5):hover i {
+      background-color: #61aa44; }
+
+/*# sourceMappingURL=style.css.map */
